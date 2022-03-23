@@ -1,0 +1,78 @@
+.title {
+ user-select: none;
+ color: #fff;
+ font-size: 124px;
+ font-weight: 600;
+ text-align: center;
+ background: #ffffff;
+ background: -webkit-radial-gradient(ellipse farthest-corner at center center, #ffffff 11%, #bababa 85%);
+ background: -moz-radial-gradient(ellipse farthest-corner at center center, #ffffff 11%, #bababa 85%);
+ background: radial-gradient(ellipse farthest-corner at center center, #ffffff 11%, #bababa 85%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+.subtitle {
+ user-select: none;
+ color: #fff;
+ font-size: 36px;
+ text-align: center;
+ font-weight: 500;
+ overflow: hidden;
+ white-space: nowrap;
+ margin-bottom: 40px;
+ display: block;
+ align-self: center;
+ animation: typing 3s steps(70, end), 1s step-end infinite;
+}
+@keyframes typing {
+ from {
+  width: 0;
+ }
+ to {
+  width: 100%;
+ }
+}
+.social {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.social-link svg {
+ width: 35px;
+ height: 35px;
+ margin: 0 15px;
+}
+.social-link g,
+.social-link path {
+ fill: #fff;
+ transition: 1s all;
+}
+.telegram:hover g,
+.telegram:hover path {
+ fill: #28a0d3;
+}
+.github:hover g,
+.github:hover path {
+ fill: #e44d30;
+}
+.linkedin:hover g,
+.linkedin:hover path {
+ fill: #0961b8;
+}
+.upwork:hover g,
+.upwork:hover path {
+ fill: #15a001;
+}
+@media screen and (max-width: 580px) {
+ .title {
+  font-size: 80px;
+ }
+ .subtitle {
+  font-size: 28px;
+ }
+ .social-link svg {
+  width: 25px;
+  height: 25px;
+  margin: 0 10px;
+ }
+}
